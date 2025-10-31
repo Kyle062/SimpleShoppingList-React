@@ -3,7 +3,7 @@ import "./ShoppingInput.css"
 
 export function ShoppingInput({ handleAddShoppingList }) {
   const [inputText, setInputText] = useState('');
-  
+
   function handleAddClick() {
     handleAddShoppingList(inputText);
     setInputText('')
@@ -12,14 +12,15 @@ export function ShoppingInput({ handleAddShoppingList }) {
   return (
     <div className="input-container">
       <input type="text"
-        className="list-input"
         placeholder="Add to the list..."
         onChange={(e) => setInputText(e.target.value)}
+        value={inputText}
+        className="list-input"
       />
 
       <button onClick={handleAddClick}
         className="add-button">
-        Add
+        ➕ Add
       </button>
     </div>
   );
