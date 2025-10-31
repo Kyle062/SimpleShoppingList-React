@@ -1,0 +1,43 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px auto;
+}
+
+.list-input {
+  width: 250px;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3 ease;
+
+}
+
+.list-input:focus {
+  border-color: rgb(255, 175, 54);
+  box-shadow: 0 0 5px rgb(255, 167, 34);
+}
+
+.add-button {
+  padding: 10px 18px;
+  background-color: rgb(201, 150, 72);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+
+.add-button:hover {
+  background-color: rgb(251, 182, 80);
+  transform: scale(1.05);
+}
+
+.add-button:active {
+  transform: scale(0.98);
+}
